@@ -183,9 +183,9 @@ class Main_Window(tk.Frame):
                     self.stat["bg"] = STAT_ACTIVE_COLOR 
             elif lp_object.Check( 0, MK3MINI_NAME ):
                 lp_object = launchpad.LaunchpadMk2()
-                if lp_object.Open( 0, MK3MINI_NAME ):
+                if lp_object.Open( 1, MK3MINI_NAME ):
                     lp_connected = True
-                    lp_mode = "Mk2"
+                    lp_mode = "Mk£"
                     lp_object.ButtonFlush()
                     lp_object.LedCtrlBpm(INDICATOR_BPM)
                     lp_events.start(lp_object)
